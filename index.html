@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/80133de64f.js" crossorigin="anonymous"></script>
+    <title>Food-loveR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./stylesFile/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="bg-gray-100 fixed top-0 left-0 right-0 z-10">
+            <div class="container mx-auto flex justify-between items-center h-32">
+                <div>
+                    <h1 class="text-4xl font-semibold">Food LoveR</h1>
+                </div>
+                <div class="flex justify-center items-center gap-4">
+                    <input type="text"
+                        class="outline-none w-full px-4 py-2 text-lg font-semibold rounded-md placeholder:text-white bg-sky-400 text-white"
+                        id="search-inp" placeholder="Search What You Want">
+                    <button id="search-btn" class="px-8 py-2 text-white text-lg font-semibold bg-sky-400 rounded-md">Search</button>
+                </div>
+                <div class="flex justify-between items-center gap-3">
+                    <button
+                        class="bg-sky-500 hover:bg-sky-600 text-white text-lg font-semibold px-8 py-1 rounded-md">Log
+                        in</button>
+                    <div class="relative">
+                        <i id="add-to-cart" class="fa-solid fa-bag-shopping text-4xl text-sky-500 hover:text-sky-600"></i>
+                        <span id="total-add-to-card" class="absolute rounded-full px-1 text-red-500 bg-red-100">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto custom-class-banner h-[50vh] mt-32">
+            <div class="flex flex-col justify-center items-center h-full text-center text-white space-y-4">
+                <h1 class="text-5xl font-semibold">Hello Food LoveR</h1>
+                <h1 class="text-5xl font-semibold">Here Is Your Best Food</h1>
+                <p class="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quas eum
+                    rem<br> quidem inventore quasi cum
+                    sequi ducimus illum impedit?
+                </p>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto my-20">
+        <button id="food-show-all-btn" class="bg-sky-400 text-lg font-semibold py-1 px-3 rounded text-white">Show All</button>
+        <button id="food-hide-btn" class="bg-sky-400 text-lg font-semibold py-1 px-3 rounded text-white hidden">Hide Again</button>
+        <section class="grid grid-cols-4 gap-5 my-5" id="food-cards-container">
+
+            
+        </section>
+        <button id="drind-show-all-btn" class="bg-sky-400 text-lg font-semibold py-1 px-3 rounded text-white mb-4">Show All</button>
+        <button id="drind-hide-btn" class="bg-sky-400 text-lg font-semibold py-1 px-3 rounded text-white mb-4 hidden">Hide Again</button>
+        <section class="grid grid-cols-4 gap-5 my-5" id="drind-cards-container">
+
+            
+        </section>
+        
+    </main>
+    <footer class="h-[30vh] bg-black">
+
+    </footer>
+
+    <script src="./js-file/app.js"></script>
+</body>
+
+</html>
